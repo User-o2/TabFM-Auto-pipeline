@@ -1,0 +1,990 @@
+{
+  "source_url": "https://deqingfu.github.io/tabfm-auto/explorer.html",
+  "source_snapshot": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/.tabfm_extract/explorer.html",
+  "source_sha256": "e62b7dcafa3a9e30b789e386d4e89a35545ec9eaa6f363a33c3ee57f236fb93d",
+  "snapshot_saved_at": "2026-10-24T16:56:44.914937+08:00",
+  "dataset_count": 51,
+  "pipeline_count": 51,
+  "writeup_count": 51,
+  "suite_counts": {
+    "tabarena_regression": 13,
+    "tabarena_binary": 30,
+    "tabarena_multiclass": 8
+  },
+  "verification": {
+    "exact_utf8_bytes_match_source_fields": true,
+    "all_pipelines_parse_as_python": true,
+    "pipelines_executed": false
+  },
+  "datasets": [
+    {
+      "id": "airfoil_self_noise",
+      "name": "airfoil_self_noise",
+      "suite": "tabarena_regression",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=airfoil_self_noise&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=airfoil_self_noise&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/airfoil_self_noise/pipeline.py",
+          "bytes": 8583,
+          "sha256": "65fa1b3f1b6f364c6daa2e2709a477badc1b9e4c874b8d98390bc8b1ba29020b"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/airfoil_self_noise/README.md",
+          "bytes": 4280,
+          "sha256": "83877a7141777d04e759b48f4b5e2127c4a5e20f5b064c6a49c25e677ffaa4a0"
+        }
+      }
+    },
+    {
+      "id": "Amazon_employee_access",
+      "name": "Amazon_employee_access",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Amazon_employee_access&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Amazon_employee_access&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Amazon_employee_access/pipeline.py",
+          "bytes": 8965,
+          "sha256": "4343ee72605de68afbfb2d741fa8b5098df3007a10c3a472227c2cf648720dc1"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Amazon_employee_access/README.md",
+          "bytes": 3696,
+          "sha256": "6695728f8be58a289c1dbda5ea5a90470c1cf490c0fe07fb117273607b0d0f8b"
+        }
+      }
+    },
+    {
+      "id": "anneal",
+      "name": "anneal",
+      "suite": "tabarena_multiclass",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=anneal&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=anneal&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/anneal/pipeline.py",
+          "bytes": 6244,
+          "sha256": "583045c31c9e96cfd41b75be68debe7dd10790bbb1cd72f42c76f2dd22082345"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/anneal/README.md",
+          "bytes": 4173,
+          "sha256": "fde3c9eb8807313322f1857e24ab08ee813103ae7e18b9b9f2af64f277d2e012"
+        }
+      }
+    },
+    {
+      "id": "Another-Dataset-on-used-Fiat-500",
+      "name": "Another-Dataset-on-used-Fiat-500",
+      "suite": "tabarena_regression",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Another-Dataset-on-used-Fiat-500&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Another-Dataset-on-used-Fiat-500&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Another-Dataset-on-used-Fiat-500/pipeline.py",
+          "bytes": 2988,
+          "sha256": "5e1996127bac6deb4a37262283937628ad7c2cc5b3a04121f89ee6ebc9f0af01"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Another-Dataset-on-used-Fiat-500/README.md",
+          "bytes": 4308,
+          "sha256": "ca6eef3ee7d82739788b402c235d7862de5f0b66ff87c4f8b76d7daf65deb292"
+        }
+      }
+    },
+    {
+      "id": "APSFailure",
+      "name": "APSFailure",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=APSFailure&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=APSFailure&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/APSFailure/pipeline.py",
+          "bytes": 1341,
+          "sha256": "1a6ccd63b8dd118d0b2010ab95d13729dbe9284b571f5915c4402faebd049e33"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/APSFailure/README.md",
+          "bytes": 3405,
+          "sha256": "3da152c53456448177cdf09aff8884159cb16780035282868e0e27228a3402c7"
+        }
+      }
+    },
+    {
+      "id": "bank-marketing",
+      "name": "bank-marketing",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=bank-marketing&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=bank-marketing&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/bank-marketing/pipeline.py",
+          "bytes": 1085,
+          "sha256": "533c1526c7b1d149683f17bd4a882e41b871ba130041020be360358a47266585"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/bank-marketing/README.md",
+          "bytes": 3986,
+          "sha256": "55e9ea2feb1d8bf48d8d34381e0c42c55dd7fd8dee2fa9def33ca3741085bebc"
+        }
+      }
+    },
+    {
+      "id": "Bank_Customer_Churn",
+      "name": "Bank_Customer_Churn",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Bank_Customer_Churn&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Bank_Customer_Churn&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Bank_Customer_Churn/pipeline.py",
+          "bytes": 2092,
+          "sha256": "b613761accf4e57f2371d7a2c8c92236a6a0024d63428497e56c04019de21c2b"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Bank_Customer_Churn/README.md",
+          "bytes": 3547,
+          "sha256": "66a487d3fee86ebfcb5813c8331afc1c753d6fa685ac70f63a0ec9b5498c0f88"
+        }
+      }
+    },
+    {
+      "id": "Bioresponse",
+      "name": "Bioresponse",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Bioresponse&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Bioresponse&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Bioresponse/pipeline.py",
+          "bytes": 4994,
+          "sha256": "e44fba31fb343f635605dac06e38e2aff7f8dc089bc093f73191cb029ea7eab6"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Bioresponse/README.md",
+          "bytes": 3564,
+          "sha256": "450d05289b88eabde6e2f1b8180200c83262aeaa5127a7ded7e4c3ed7f5748be"
+        }
+      }
+    },
+    {
+      "id": "blood-transfusion-service-center",
+      "name": "blood-transfusion-service-center",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=blood-transfusion-service-center&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=blood-transfusion-service-center&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/blood-transfusion-service-center/pipeline.py",
+          "bytes": 3893,
+          "sha256": "1f328a6f82b21ea5180e8774b0ef513cfe1a2f0a1309349225a9b8def714ce5d"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/blood-transfusion-service-center/README.md",
+          "bytes": 4032,
+          "sha256": "a76338189a5abb6c68fde4d774383d63d4b75bd040b5032adb7d2736bb1556ab"
+        }
+      }
+    },
+    {
+      "id": "churn",
+      "name": "churn",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=churn&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=churn&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/churn/pipeline.py",
+          "bytes": 3618,
+          "sha256": "5daab907bb34db3162c3f3a7ffb653c56a1360ef25a58cbad13facd7cd59b848"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/churn/README.md",
+          "bytes": 3952,
+          "sha256": "a92952eadb050b9bfda1e10486f6930eb569371552a17390300339731cc4b9d3"
+        }
+      }
+    },
+    {
+      "id": "coil2000_insurance_policies",
+      "name": "coil2000_insurance_policies",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=coil2000_insurance_policies&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=coil2000_insurance_policies&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/coil2000_insurance_policies/pipeline.py",
+          "bytes": 4911,
+          "sha256": "e1406af3487a934df3bb4af73a3e31784c718170e8ecbb91eca434fa2c3ab60b"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/coil2000_insurance_policies/README.md",
+          "bytes": 4745,
+          "sha256": "c67296f9ae15a8bf6f993d9a9278eb6af4d5529e6d1589c9addcee6b9db2980d"
+        }
+      }
+    },
+    {
+      "id": "concrete_compressive_strength",
+      "name": "concrete_compressive_strength",
+      "suite": "tabarena_regression",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=concrete_compressive_strength&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=concrete_compressive_strength&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/concrete_compressive_strength/pipeline.py",
+          "bytes": 1162,
+          "sha256": "b3cbf252f69b54a740e845bfe711a746e6d7a42edd5fbd0b9347c289b1fe1fa1"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/concrete_compressive_strength/README.md",
+          "bytes": 3030,
+          "sha256": "3c9cb2f1bbdce41f77b6c062e36c07be75bef1b8f32f1cfe0ea1929912dbbd39"
+        }
+      }
+    },
+    {
+      "id": "credit-g",
+      "name": "credit-g",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=credit-g&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=credit-g&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/credit-g/pipeline.py",
+          "bytes": 4019,
+          "sha256": "422130d6b4a50b73a51a6666d30ac7962f6280ce1ee7a1214435ba23a487e9bd"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/credit-g/README.md",
+          "bytes": 4172,
+          "sha256": "66d85030132d43d5d6f48362a725e4bc63d7be2d34f7b5c19f91f511e58260a8"
+        }
+      }
+    },
+    {
+      "id": "credit_card_clients_default",
+      "name": "credit_card_clients_default",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=credit_card_clients_default&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=credit_card_clients_default&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/credit_card_clients_default/pipeline.py",
+          "bytes": 1472,
+          "sha256": "348392e445b54b849fca4fe069ed69a2ca9495d67a58052f03e5f94bb63df022"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/credit_card_clients_default/README.md",
+          "bytes": 3759,
+          "sha256": "0c9ae64b857f38a389931354c25e12ad5d1d96f3489e7fd11d23b0b1dc48d517"
+        }
+      }
+    },
+    {
+      "id": "customer_satisfaction_in_airline",
+      "name": "customer_satisfaction_in_airline",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=customer_satisfaction_in_airline&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=customer_satisfaction_in_airline&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/customer_satisfaction_in_airline/pipeline.py",
+          "bytes": 811,
+          "sha256": "1126db37eaba1d15b3d8ed5489bd6ee0aa9dcde5d6cb11f0ab3224bb38ba8ff5"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/customer_satisfaction_in_airline/README.md",
+          "bytes": 3513,
+          "sha256": "6bc00f64ace56c354a321ea2b602ffe13cab38cc51ba8125a06f6ccfe50f8eb4"
+        }
+      }
+    },
+    {
+      "id": "diabetes",
+      "name": "diabetes",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=diabetes&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=diabetes&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/diabetes/pipeline.py",
+          "bytes": 2681,
+          "sha256": "e2d6edf24d666e33eb9851faa47c7c1897a38cd226103543d8760d829934d8ee"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/diabetes/README.md",
+          "bytes": 3695,
+          "sha256": "161be8d15cda5201b8aa713bc7ec5974908bdc936ff8efa686e02539fe12cf82"
+        }
+      }
+    },
+    {
+      "id": "Diabetes130US",
+      "name": "Diabetes130US",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Diabetes130US&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Diabetes130US&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Diabetes130US/pipeline.py",
+          "bytes": 6999,
+          "sha256": "3e8b8c5127db37e74c9f0d15f336a0e848bc2a0af1821785b2df218f4c7522c2"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Diabetes130US/README.md",
+          "bytes": 4402,
+          "sha256": "9c9cfa293d9e4aa26cbf37edcd92b3c9fa7d12127a8964d2f36a50bc271c55f0"
+        }
+      }
+    },
+    {
+      "id": "diamonds",
+      "name": "diamonds",
+      "suite": "tabarena_regression",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=diamonds&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=diamonds&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/diamonds/pipeline.py",
+          "bytes": 6191,
+          "sha256": "820b21ebcc7ed8dbc55b7213be964712fe26c342163438f7071e9d604dedb4bd"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/diamonds/README.md",
+          "bytes": 4828,
+          "sha256": "5ac62eb13b1406172e65d1108a53d5e8f235a16907874f6295bd60012351e81c"
+        }
+      }
+    },
+    {
+      "id": "E-CommereShippingData",
+      "name": "E-CommereShippingData",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=E-CommereShippingData&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=E-CommereShippingData&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/E-CommereShippingData/pipeline.py",
+          "bytes": 1445,
+          "sha256": "6c708339ddd01c44cd8332aeff9fe3a8ec666e35f824073a01ef1020141c96d5"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/E-CommereShippingData/README.md",
+          "bytes": 3870,
+          "sha256": "dbee4cae58bd678964dec89341540ae0e1a09dbb1f1c899e2d67bf6d8e6ce3ab"
+        }
+      }
+    },
+    {
+      "id": "Fitness_Club",
+      "name": "Fitness_Club",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Fitness_Club&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Fitness_Club&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Fitness_Club/pipeline.py",
+          "bytes": 2317,
+          "sha256": "a6cdd5ab8d8070d5b953aacdb7ed44dc38c429f8921cb106a56d3775e2ebaff5"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Fitness_Club/README.md",
+          "bytes": 3368,
+          "sha256": "2dce3f1d40fa8626e835107b945f27d6234c888444eee5a73003ee2a1dbb5620"
+        }
+      }
+    },
+    {
+      "id": "Food_Delivery_Time",
+      "name": "Food_Delivery_Time",
+      "suite": "tabarena_regression",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Food_Delivery_Time&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Food_Delivery_Time&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Food_Delivery_Time/pipeline.py",
+          "bytes": 2536,
+          "sha256": "c8a91fcc0e8ebef3925fee4e78ecf0954eaa90d99c6953d578762e80342bb986"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Food_Delivery_Time/README.md",
+          "bytes": 5543,
+          "sha256": "91fea38214b7b95ff6477600209156de152ce7c9b5e6c7acaba00700eccd411b"
+        }
+      }
+    },
+    {
+      "id": "GiveMeSomeCredit",
+      "name": "GiveMeSomeCredit",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=GiveMeSomeCredit&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=GiveMeSomeCredit&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/GiveMeSomeCredit/pipeline.py",
+          "bytes": 1750,
+          "sha256": "fdfca7502a1547b3c4d8df93f405ad6691984b3525911255e878f3d98f343621"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/GiveMeSomeCredit/README.md",
+          "bytes": 3302,
+          "sha256": "8f12530de037db03e04b60c5d101caaf90a3ec1d91d30dadd6a66f72dc13dae0"
+        }
+      }
+    },
+    {
+      "id": "hazelnut-spread-contaminant-detection",
+      "name": "hazelnut-spread-contaminant-detection",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=hazelnut-spread-contaminant-detection&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=hazelnut-spread-contaminant-detection&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/hazelnut-spread-contaminant-detection/pipeline.py",
+          "bytes": 2576,
+          "sha256": "3625d28e6c0cf2cc7de63e63ccbf87f003afe72bb7e40133e3b30fc3cd70d45e"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/hazelnut-spread-contaminant-detection/README.md",
+          "bytes": 4050,
+          "sha256": "3b6cd693a673ae4311668e5b4a39f6d19652624c1fe60e13f2bebd530ea6d0d3"
+        }
+      }
+    },
+    {
+      "id": "healthcare_insurance_expenses",
+      "name": "healthcare_insurance_expenses",
+      "suite": "tabarena_regression",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=healthcare_insurance_expenses&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=healthcare_insurance_expenses&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/healthcare_insurance_expenses/pipeline.py",
+          "bytes": 6794,
+          "sha256": "0e7aa9a89c6cf2a8669b6ae7a108e9425cfa58adab5a291be17be9adc5bfe44b"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/healthcare_insurance_expenses/README.md",
+          "bytes": 4221,
+          "sha256": "a646ee36f5fe013b4f955858f013fb7a6acf02df2c1d886bd3e302a79220a54d"
+        }
+      }
+    },
+    {
+      "id": "heloc",
+      "name": "heloc",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=heloc&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=heloc&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/heloc/pipeline.py",
+          "bytes": 1903,
+          "sha256": "c44df6541316fbc53d44bf52c0d5f80bd70ed25baac803f5a980f68b8959c231"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/heloc/README.md",
+          "bytes": 4002,
+          "sha256": "a4f47745d976d745e3240cfc488f6d9024bb5c231651416cd380e3524e8ed2ca"
+        }
+      }
+    },
+    {
+      "id": "hiva_agnostic",
+      "name": "hiva_agnostic",
+      "suite": "tabarena_multiclass",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=hiva_agnostic&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=hiva_agnostic&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/hiva_agnostic/pipeline.py",
+          "bytes": 8106,
+          "sha256": "edcef8e0c7ae405bf2b529bbd9002bb826489e7b5c7d6cbd94fccb6f48ea493b"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/hiva_agnostic/README.md",
+          "bytes": 4621,
+          "sha256": "65719addb1001acd50eaf9e8f17aad078abf68754fb2326d6d77497b12fe6c59"
+        }
+      }
+    },
+    {
+      "id": "houses",
+      "name": "houses",
+      "suite": "tabarena_regression",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=houses&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=houses&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/houses/pipeline.py",
+          "bytes": 5917,
+          "sha256": "d1b76f94b563d6fa854c7048f86b9294c7631eacef37f75d3024786e9a598a9d"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/houses/README.md",
+          "bytes": 4405,
+          "sha256": "9bf2c45ec2093c41e226cf3fa217c5db593259b297e2adfba1a5dfcce1919aa7"
+        }
+      }
+    },
+    {
+      "id": "HR_Analytics_Job_Change_of_Data_Scientists",
+      "name": "HR_Analytics_Job_Change_of_Data_Scientists",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=HR_Analytics_Job_Change_of_Data_Scientists&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=HR_Analytics_Job_Change_of_Data_Scientists&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/HR_Analytics_Job_Change_of_Data_Scientists/pipeline.py",
+          "bytes": 5820,
+          "sha256": "696820e83df9bc8cdf8dc9c50d4660e755db3292cd8c958156d74eddfcf579f6"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/HR_Analytics_Job_Change_of_Data_Scientists/README.md",
+          "bytes": 3598,
+          "sha256": "7eb1fe476777630a1e61e6d66d21377c92d2262386bfbdbb9a331c036baa4aee"
+        }
+      }
+    },
+    {
+      "id": "in_vehicle_coupon_recommendation",
+      "name": "in_vehicle_coupon_recommendation",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=in_vehicle_coupon_recommendation&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=in_vehicle_coupon_recommendation&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/in_vehicle_coupon_recommendation/pipeline.py",
+          "bytes": 3828,
+          "sha256": "95c874757ad36a06dd83ed5f770b9cfaa397adc1788e8ae3ece607f9e615d2b0"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/in_vehicle_coupon_recommendation/README.md",
+          "bytes": 4143,
+          "sha256": "288521b62ac123ac6fc1ada20dcbb73db8dcff76d6b5f12526534fad38e84dc7"
+        }
+      }
+    },
+    {
+      "id": "Is-this-a-good-customer",
+      "name": "Is-this-a-good-customer",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Is-this-a-good-customer&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Is-this-a-good-customer&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Is-this-a-good-customer/pipeline.py",
+          "bytes": 3938,
+          "sha256": "83ca40b1170a3b927b0b59d5351524ccd9a27d10eb5ca6b026f125a20a26ac2a"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Is-this-a-good-customer/README.md",
+          "bytes": 4266,
+          "sha256": "0acc5f41c181fb9ccc7356f16a7ae8a2a7084d8c2b595245660be407347e313d"
+        }
+      }
+    },
+    {
+      "id": "jm1",
+      "name": "jm1",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=jm1&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=jm1&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/jm1/pipeline.py",
+          "bytes": 2798,
+          "sha256": "03e47204223aa4aec61bd580f7e4730bef23feebc854ad843b705b731db962a7"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/jm1/README.md",
+          "bytes": 4439,
+          "sha256": "d0a6a4e5d9c61fd23dcf273aa5de53a4155b1300f8b6ed3fef614338981fedaa"
+        }
+      }
+    },
+    {
+      "id": "kddcup09_appetency",
+      "name": "kddcup09_appetency",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=kddcup09_appetency&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=kddcup09_appetency&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/kddcup09_appetency/pipeline.py",
+          "bytes": 5558,
+          "sha256": "693b89a15af734caca66492b53e8a552ff1d3a6fc68a55736ffd7c56e807f274"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/kddcup09_appetency/README.md",
+          "bytes": 3479,
+          "sha256": "43283cfab31bc37cccfa11d7c4fa3d35dddd496f29eb2957c60f8e05fc6d1538"
+        }
+      }
+    },
+    {
+      "id": "Marketing_Campaign",
+      "name": "Marketing_Campaign",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Marketing_Campaign&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=Marketing_Campaign&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Marketing_Campaign/pipeline.py",
+          "bytes": 3769,
+          "sha256": "fc533713321af0b055496599ccf3b9cea78b8fd92bd926a3357396ce0cbcdca7"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/Marketing_Campaign/README.md",
+          "bytes": 4599,
+          "sha256": "fbf0de37871b55f45159fec28849e18b9018877966d4983c9b785ae3cbd1bd89"
+        }
+      }
+    },
+    {
+      "id": "maternal_health_risk",
+      "name": "maternal_health_risk",
+      "suite": "tabarena_multiclass",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=maternal_health_risk&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=maternal_health_risk&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/maternal_health_risk/pipeline.py",
+          "bytes": 1412,
+          "sha256": "e303c45c55f83a7720dd9ac65ee244b1bf815c6c20c5732966bae0465a370900"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/maternal_health_risk/README.md",
+          "bytes": 3617,
+          "sha256": "3a2f46d55017811cb0f698bbf83f478e3925cb72e3e1320d3d8cf4e63a892318"
+        }
+      }
+    },
+    {
+      "id": "miami_housing",
+      "name": "miami_housing",
+      "suite": "tabarena_regression",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=miami_housing&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=miami_housing&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/miami_housing/pipeline.py",
+          "bytes": 1569,
+          "sha256": "717a8945af40faa59d086b55b2a221273e6f27385fc660d446260cf565af20a4"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/miami_housing/README.md",
+          "bytes": 4905,
+          "sha256": "5d83f73b963b193c325e6538dc1d206fd907760888784c0f0f53ffdd0507e642"
+        }
+      }
+    },
+    {
+      "id": "MIC",
+      "name": "MIC",
+      "suite": "tabarena_multiclass",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=MIC&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=MIC&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/MIC/pipeline.py",
+          "bytes": 20554,
+          "sha256": "cc54aa320279aecdb4eeaae5c79092f48f6a65d32599111bdf2790b15a144747"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/MIC/README.md",
+          "bytes": 4499,
+          "sha256": "9f7f4ddb6f8c855d0e3fc307e954c34ac64e84fa0e9e3df033313cccf3948743"
+        }
+      }
+    },
+    {
+      "id": "NATICUSdroid",
+      "name": "NATICUSdroid",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=NATICUSdroid&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=NATICUSdroid&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/NATICUSdroid/pipeline.py",
+          "bytes": 1896,
+          "sha256": "a01f8ee5e8b680303e9d33be8a3f3f67178f04c3c2d5265edde5227c902922b2"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/NATICUSdroid/README.md",
+          "bytes": 3867,
+          "sha256": "22f4da458ee9db2c0425f5e3f470d5c06bb4ab19828e1a3f7795fa4161900431"
+        }
+      }
+    },
+    {
+      "id": "online_shoppers_intention",
+      "name": "online_shoppers_intention",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=online_shoppers_intention&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=online_shoppers_intention&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/online_shoppers_intention/pipeline.py",
+          "bytes": 3148,
+          "sha256": "4a3f9730f71682e37367b60352288e38590771882957852ebbced62c1f0a1e65"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/online_shoppers_intention/README.md",
+          "bytes": 3687,
+          "sha256": "c593cc15b5e5da5ada1afa20ae5742ee319eb3afd44ed7ca831032a8dc9b9eab"
+        }
+      }
+    },
+    {
+      "id": "physiochemical_protein",
+      "name": "physiochemical_protein",
+      "suite": "tabarena_regression",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=physiochemical_protein&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=physiochemical_protein&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/physiochemical_protein/pipeline.py",
+          "bytes": 2453,
+          "sha256": "113c6ecfd340e250c3bb3a343ff982f14a05c0f6051529742872099928502baa"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/physiochemical_protein/README.md",
+          "bytes": 3732,
+          "sha256": "090e0b367aebdffc29e8e987701b4f44a7fa9c2b9341810c57f978f841be5579"
+        }
+      }
+    },
+    {
+      "id": "polish_companies_bankruptcy",
+      "name": "polish_companies_bankruptcy",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=polish_companies_bankruptcy&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=polish_companies_bankruptcy&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/polish_companies_bankruptcy/pipeline.py",
+          "bytes": 9128,
+          "sha256": "3ee4b46f8dc957eed4560b8e50bfd4463862df820c07a6102d7f6d3523c71241"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/polish_companies_bankruptcy/README.md",
+          "bytes": 4030,
+          "sha256": "df34b89282f4541effd8e808467088db19d31f5a438179079a23244d612c2e16"
+        }
+      }
+    },
+    {
+      "id": "qsar-biodeg",
+      "name": "qsar-biodeg",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=qsar-biodeg&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=qsar-biodeg&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/qsar-biodeg/pipeline.py",
+          "bytes": 6328,
+          "sha256": "e3bb575d70ce5ddacc8f1575fba1c33b83741e7a325d5ca7e088438c4bfd9f93"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/qsar-biodeg/README.md",
+          "bytes": 5262,
+          "sha256": "a2f1e44d05fde2e723239999b912dc3bfa8dc981fba7d9903d5e9d4565d41152"
+        }
+      }
+    },
+    {
+      "id": "QSAR-TID-11",
+      "name": "QSAR-TID-11",
+      "suite": "tabarena_regression",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=QSAR-TID-11&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=QSAR-TID-11&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/QSAR-TID-11/pipeline.py",
+          "bytes": 2637,
+          "sha256": "214088c64744581e552e27086257161d8a71ce37b8ebd8c38878fd257d354f21"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/QSAR-TID-11/README.md",
+          "bytes": 3788,
+          "sha256": "908240fa5409d05cd2cddd9f939b76f88925712d6003516548290b8a9ac6cb0a"
+        }
+      }
+    },
+    {
+      "id": "QSAR_fish_toxicity",
+      "name": "QSAR_fish_toxicity",
+      "suite": "tabarena_regression",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=QSAR_fish_toxicity&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=QSAR_fish_toxicity&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/QSAR_fish_toxicity/pipeline.py",
+          "bytes": 3136,
+          "sha256": "9491701dff3924adec7b2cdc13eb0cf2b327b4e85318691abf8173a5a07aa9c4"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/QSAR_fish_toxicity/README.md",
+          "bytes": 3702,
+          "sha256": "2797cdd74cdf1b6f100dffa1d668f1757f6f99797144b989be564f3bcc61efc0"
+        }
+      }
+    },
+    {
+      "id": "SDSS17",
+      "name": "SDSS17",
+      "suite": "tabarena_multiclass",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=SDSS17&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=SDSS17&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/SDSS17/pipeline.py",
+          "bytes": 936,
+          "sha256": "85221294655d70282c2586807d89b6624443481a9b8a1c97b9ca85ce675fbc73"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/SDSS17/README.md",
+          "bytes": 3352,
+          "sha256": "5f6f207e238c5c72d55216a235350793f26ffacbcae621284c63e4a690fc65e5"
+        }
+      }
+    },
+    {
+      "id": "seismic-bumps",
+      "name": "seismic-bumps",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=seismic-bumps&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=seismic-bumps&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/seismic-bumps/pipeline.py",
+          "bytes": 3416,
+          "sha256": "48c128fb7c28b717f3c586ce63c52fe725f7035b91ccd55d66b994e10fa3389d"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/seismic-bumps/README.md",
+          "bytes": 4401,
+          "sha256": "c1ca5266239ea3ea445ebb3a554cfc6c70ba323193896389088613eef4ecd793"
+        }
+      }
+    },
+    {
+      "id": "splice",
+      "name": "splice",
+      "suite": "tabarena_multiclass",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=splice&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=splice&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/splice/pipeline.py",
+          "bytes": 20674,
+          "sha256": "b6271cc623dd2a51d0337c85c0d7157c088f7cc282529593657e888e6c90110d"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/splice/README.md",
+          "bytes": 3998,
+          "sha256": "c6cd174eba8c33ce3cde92cd8c9e158d3d9314cbc0d2ab6c52a3b87fe3d0a0d8"
+        }
+      }
+    },
+    {
+      "id": "students_dropout_and_academic_success",
+      "name": "students_dropout_and_academic_success",
+      "suite": "tabarena_multiclass",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=students_dropout_and_academic_success&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=students_dropout_and_academic_success&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/students_dropout_and_academic_success/pipeline.py",
+          "bytes": 4282,
+          "sha256": "1672fef2c827c5bdceec8a4c93ec413f5b0d77f88f775921597bf3b487518870"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/students_dropout_and_academic_success/README.md",
+          "bytes": 3430,
+          "sha256": "715cbf8348e82baaa3abb3d2242de7b0a31564cc8b00cb9800114614794306e2"
+        }
+      }
+    },
+    {
+      "id": "superconductivity",
+      "name": "superconductivity",
+      "suite": "tabarena_regression",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=superconductivity&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=superconductivity&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/superconductivity/pipeline.py",
+          "bytes": 2808,
+          "sha256": "02824ebe25a612c6039d9fccaaa89cc6f5a8182d36ad9e3ef70c100b8e5c31d9"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/superconductivity/README.md",
+          "bytes": 4117,
+          "sha256": "0e99eaf62d3dab297d8ea59739c227129686176a2079e531bae1d5925895ef01"
+        }
+      }
+    },
+    {
+      "id": "taiwanese_bankruptcy_prediction",
+      "name": "taiwanese_bankruptcy_prediction",
+      "suite": "tabarena_binary",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=taiwanese_bankruptcy_prediction&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=taiwanese_bankruptcy_prediction&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/taiwanese_bankruptcy_prediction/pipeline.py",
+          "bytes": 6430,
+          "sha256": "35a521d5c40cf8511e2679b1a01bf48c5637f7ad75995acf2915b851eae0d205"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/taiwanese_bankruptcy_prediction/README.md",
+          "bytes": 3824,
+          "sha256": "e9234d84d4acb6d7f48c25dd7892c698267dbad3f02c8eb617e549d62b9cb271"
+        }
+      }
+    },
+    {
+      "id": "website_phishing",
+      "name": "website_phishing",
+      "suite": "tabarena_multiclass",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=website_phishing&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=website_phishing&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/website_phishing/pipeline.py",
+          "bytes": 1384,
+          "sha256": "8a8f512da89d49f43915058a6aa0e818c60624df770e0f079fcb26b7d1366891"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/website_phishing/README.md",
+          "bytes": 4138,
+          "sha256": "8869bbc0ace3d816d9d89551bb331b3b19ae7fc625713962c761baf49467cac8"
+        }
+      }
+    },
+    {
+      "id": "wine_quality",
+      "name": "wine_quality",
+      "suite": "tabarena_regression",
+      "code_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=wine_quality&tab=code&hook=all",
+      "writeup_url": "https://deqingfu.github.io/tabfm-auto/explorer.html#mode=pipelines&task=wine_quality&tab=docs&hook=all",
+      "files": {
+        "pipeline.py": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/wine_quality/pipeline.py",
+          "bytes": 6675,
+          "sha256": "9364e5079182060b1ad5330f7f3d39b8e7763efb830c3bae6c069bfcb5dbd163"
+        },
+        "README.md": {
+          "path": "/home/king/projects/LLM/Tabular_Learning/TabFM-Auto/TabArena_Pipeline/wine_quality/README.md",
+          "bytes": 5839,
+          "sha256": "cc7bdf69900a74575bcfbb28c0be6e03c3de7d85143feeb4e860cd617007ab62"
+        }
+      }
+    }
+  ]
+}
