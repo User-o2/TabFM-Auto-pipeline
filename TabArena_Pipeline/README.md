@@ -6,24 +6,24 @@
 
 每个数据集目录使用 Explorer 的完整 `name`，大小写、连字符和下划线均保留。论文中的简写可能与此不同，例如 `concrete_strength` 对应网页中的 `concrete_compressive_strength`。
 
-- `pipeline.py`：Code → All code 的完整源码（网页 `code` 字段）。
-- `README.md`：Write-up → README.md 的原始 Markdown（网页 `readme` 字段）。
+- `pipeline.py`：Code → All code 的完整源码（网页 `code` 字段）。最终搜索得到的 Pipeline 四个模块化 Python函数（`preprocess()`、 `engineer()`、 `sample()`和 `postprocess()`）以及配置字典`TABFM_KWARGS`。
+- `README.md`：Write-up → README.md 的原始 Markdown（网页 `readme` 字段）。每个数据集的 Write-up 主要记录数据任务、最终方案、设计动机、部分实验结果；是否需要辅助文件、缓存、构建步骤，运行依赖是什么；容易误读的配置、停用分支、评估口径和工程细节。
 
-所有原文均以 UTF-8 无损保存，未添加标题、行号或中文注释，未调整格式、辅助函数、导入语句或已有注释。
+所有原文均以 UTF-8 无损保存。
 
 ## 论文与代码的对应关系
 
-已阅读本地 `paper_pdf/TabFM-Auto.pdf` 的正文及相关附录。该工作固定 TabFM 的模型权重，由编码智能体结合数据集元信息与训练集内部三折交叉验证，搜索数据处理流水线。四个主要接口分别是 `preprocess`（清洗与目标变换）、`engineer`（特征工程）、`sample`（上下文行选择）、`postprocess`（预测校准与逆变换）；`TABFM_KWARGS` 用于配置基础模型的推理预设。
+TabFM-Auto 固定 TabFM 的模型权重，由编码智能体结合数据集元信息与训练集内部三折交叉验证，搜索数据处理流水线。四个主要接口分别是 `preprocess`（清洗与目标变换）、`engineer`（特征工程）、`sample`（上下文行选择）、`postprocess`（预测校准与逆变换）；`TABFM_KWARGS` 用于配置基础模型的推理预设。
 
 论文在每个数据集的 fold 0 训练集上搜索一次，再固定所选代码用于各官方划分。本目录保存网页当前提供的每个数据集的一份最终代码和对应说明。
 
-## 完整性核验
+## 完整性核验说明
 
 已确认 51 个目录、51 份完整源码、51 份非空 Write-up；102 个文件逐字节匹配网页原始字段，全部 Python 源码通过语法解析。未执行数据集流水线或模型推理。
 
 `manifest.json` 保存每份文件的绝对路径、字节数、SHA-256、原网页定位链接，以及网页快照的 SHA-256 和保存时间。
 
-网页快照与提取脚本保存在工作区 `.tabfm_extract/` 下。可在工作区根目录激活 `tabular` 环境后，运行 `python .tabfm_extract/extract_pipelines.py` 重复核验；已有内容不同时会拒绝覆盖。
+网页快照与提取脚本保存在工作区 `.tabfm_extract/` 下。
 
 ## 典型案例
 
