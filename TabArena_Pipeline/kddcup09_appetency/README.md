@@ -1,56 +1,31 @@
-# kddcup09_appetency — final pipeline
+# kddcup09_appetency — 最终 Pipeline
 
-## What it does
+## 运作机制
 
-The task is ~33k rows × 212 columns (174 numeric, 38 string) with 1.8% positives, scored as
-1 − AUC (lower is better). TabFM does the predicting; the pipeline's whole job is to decide
-*which* columns it sees and how the high-cardinality string columns are represented.
+该任务包含约 3.3 万行 × 212 列（174 个数值列，38 个字符串列），正样本比例为 1.8%，评估指标为 1 − AUC（越低越好）。预测由 TabFM 完成；pipeline 的全部职责在于决定模型能够看到**哪些**特征列，以及如何表征那些高基数（high-cardinality）的字符串列。
 
-For each of the 38 string columns it builds two numeric views from the training rows of the
-current fold: a level **count** and a **target encoding** (positive rate per level, smoothed
-toward the prior with `TE_SMOOTH = 60`). Both are made to look the same on the context side
-and the query side, which was the single biggest win of the run: the target encoding is
-cross-fitted over 5 random blocks (a context row's encoding is computed from the other four
-blocks, so it never sees its own label), the count a context row reads likewise excludes its
-own block and is rescaled by 5/4, and any level occurring fewer than `MIN_LEVEL = 10` times
-collapses to the prior on both sides. Without that symmetry a rare level reads one way in
-context and another way at query time and the score collapses (0.409 vs 0.152). String
-columns with at most 30 levels are additionally passed through as raw categoricals.
+针对 38 个字符串列中的每一列，它基于当前 fold 的训练样本构建了两种数值视角：类别水平**频数统计（count）**与**目标编码（target encoding）**（即每个类别水平的正样本率，并使用 `TE_SMOOTH = 60` 向先验平滑）。两者的构造确保了在 context 端（训练样本端）和 query 端（预测目标端）具有严格的一致性，这是本次运行中收益最大的一项改动：
+* 目标编码采用 5 折随机分块（random blocks）进行交叉拟合（cross-fitting，即 context 样本行的编码是由其余 4 个分块计算得出的，因此绝不会泄漏自身的标签）；
+* context 样本行读取的频数统计同样剔除了自身所在的分块，并按 5/4 进行了尺度重缩放；
+* 两端中出现频次低于 `MIN_LEVEL = 10` 的类别水平均回落折叠（collapse）为先验值。
 
-The resulting ~273 columns are then ranked by in-fold univariate AUC — with NaN scored both
-as the smallest and as the largest value, taking the better of the two, so a column whose
-signal is purely its missingness pattern ranks on par with one whose signal is in its values —
-and only the top `N_KEEP = 200` survive. Most of the raw columns are ~97% missing noise, and
-column count is what drives TabFM's cost, so this both speeds up and improves the fit. A raw
-string column inherits the score of its own encodings. TabFM then runs with
-`norm_methods = ['none', 'power', 'quantile', 'robust']` and the predictions are returned
-unmodified.
+如果不保持这种对称性，罕见类别水平在 context 端的表征与 query 端的表征就会脱节，导致模型性能崩溃（得分从 0.152 恶化至 0.409）。此外，类别水平不超过 30 个的字符串列还会作为原始类别特征直接透传。
+
+由此生成的约 273 列随后按 fold 内部的单变量 AUC（in-fold univariate AUC）进行排序——在计算时，NaN 分别被视作最小值和最大值各评估一次并取较优者，从而使完全依赖缺失模式提供有效信号的列能够与凭借数值本身提供信号的列处于平等的竞争排序中——最终仅保留排名前 `N_KEEP = 200` 的列。大部分原始列都是缺失率高达约 97% 的噪声，而特征列数正是决定 TabFM 开销的关键，因此这一筛选过程不仅加快了运行速度，还提升了拟合质量。原始字符串列会直接继承其对应编码特征的得分。随后，TabFM 使用 `norm_methods = ['none', 'power', 'quantile', 'robust']` 运行，预测结果原样返回、不作修改。
 
 ## build.sh
 
-There is nothing to build. `final/build.sh` is a no-op that exits 0 with a comment saying so.
-The pipeline reads no cache, no precomputed feature file and no auxiliary artifact — every
-statistic is recomputed inside `engineer()` from the fold's own training rows, which is also
-what keeps the target encodings honest. It needs no time and no disk.
+无需构建。`final/build.sh` 是一个空操作（no-op），仅包含一段说明注释并退出（exit 0）。该 pipeline 不读取任何缓存、预计算的特征文件或辅助构件——所有的统计量都在 `engineer()` 内部基于当前 fold 自身的训练集样本行重新计算，这也保证了目标编码不会发生数据泄露（keeps the target encodings honest）。它不耗费时间，也不占用磁盘。
 
-To reproduce:
+复现步骤：
 
-```
+```bash
 cd <this workspace> && bash final/build.sh && python final/run.py
 ```
 
-## Things a reader could get wrong
+## 读者可能产生的误区
 
-- **The encodings are fold-local by design, not by omission.** It would be natural to
-  precompute the count/target maps once over the whole training file and cache them. Doing so
-  leaks labels across the CV boundary and makes the validation numbers meaningless. The
-  cross-fitting inside `engineer()` is the method, not an implementation detail.
-- **`N_KEEP = 200` is tuned against the *clean* encodings.** An earlier value of 220 was tuned
-  while the encodings still had the context/query mismatch; after that was fixed, 180/200/220
-  scored 0.1503 / 0.1501 / 0.1517. Re-tune it if the feature set changes.
-- **`_as_str` exists for a real reason.** Arrow-backed string dtypes do not survive the pickle
-  the judge uses to hand data to the hooks on every server, so string columns are forced to
-  plain `object` dtype (and NaN to the literal `"__NA__"` level) before anything else happens.
-  The same defensive cast is applied to `y_train` in `preprocess`.
-- Rejected variants are recorded in the module docstring of `final/pipeline.py` with their
-  scores — worth reading before re-trying one of them.
+- **各类编码在设计上完全局限于 fold 内部（fold-local），而非疏忽所致。** 常见做法可能是对整个训练集文件一次性预计算好频数/目标映射并做缓存。但这样做会在跨 CV 边界时泄漏标签，使验证指标失去参考意义。在 `engineer()` 内部进行交叉拟合（cross-fitting）是本方案的核心方法，而不仅是一个实现细节。
+- **`N_KEEP = 200` 是在“干净”编码的基础上调优得到的。** 早期设置的 220 是在编码仍存在 context/query 不匹配时调出的数值；在该问题修复后，180 / 200 / 220 的得分分别为 0.1503 / 0.1501 / 0.1517。如果特征集发生变动，请重新调优此参数。
+- **`_as_str` 的存在有其实际原因。** 基于 Arrow 后端的字符串类型（Arrow-backed string dtypes）无法在 judge 向各服务器 hook 传递数据所用的 pickle 序列化过程中存活，因此在执行其他操作前，字符串列会被强制转换为标准的 `object` 类型（且 NaN 会被转为字面值 `"__NA__"` 类别）。在 `preprocess` 中对 `y_train` 也应用了相同的防御性类型转换。
+- 被否决的变体方案及其对应得分均记录在 `final/pipeline.py` 的模块 docstring 中——在重新尝试其中任何方案之前，值得先阅读了解。
