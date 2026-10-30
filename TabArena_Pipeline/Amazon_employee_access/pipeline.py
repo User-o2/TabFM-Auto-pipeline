@@ -1,3 +1,13 @@
+'''
+典型案例：构造出了三路预测—冻结的 TabFM、逻辑回归、梯度提升树，最后再融合。TabFM 权重保持冻结，但整个流水线确实训练了额外模型。
+
+- TABFM_KWARGS：空，使用框架默认配置
+- preprocess()：原样返回训练特征、训练目标和查询特征
+- engineer()：[特征工程]构造关系统计特征；训练辅助模型；将去重后的特征交给 TabFM。给 TabFM 构造的特征有三块：原始 ID、频数、关系度数
+- sample()：未定义，继承框架默认行为
+- postprocess()：[后处理]读取辅助模型的预测，与 TabFM 在标准化 logit 空间中加权融合
+'''
+
 import itertools
 
 import numpy as np
@@ -196,8 +206,7 @@ def postprocess(pred, y_orig, X_test):
   if not os.path.exists(AUX_FILE):
     return pred
   d = np.load(AUX_FILE)
-  ids = (X_test['row_id'].to_numpy(np.int64) if 'row_id' in X_test.columns
-         else np.arange(len(X_test)))
+  ids = (X_test['row_id'].to_numpy(np.int64) if 'row_id' in X_test.columns else np.arange(len(X_test)))
   if len(d['p']) != len(pred) or not np.array_equal(d['ids'], ids):
     return pred
   out = pred.copy()
